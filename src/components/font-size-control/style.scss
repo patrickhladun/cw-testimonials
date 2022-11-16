@@ -1,0 +1,20 @@
+.font-size-control-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  .font-size-select {
+    width: 100%;
+  }
+
+  .components-base-control {
+    margin-bottom: 0;
+    min-width: 60px;
+
+    &__field {
+      margin-bottom: 0;
+    }
+  }
+  .cwt-unit-select {
+    padding-bottom: 4px;
+  }
+}

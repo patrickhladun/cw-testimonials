@@ -1,0 +1,25 @@
+.cwt-device-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &__label h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .components-button-group .components-button {
+    color: #c9c9c9;
+  }
+
+  &__button-desktop.active,
+  &__button-tablet.active,
+  &__button-mobile.active{
+    background: #eeeeee;
+    color: #037CBA !important;
+  }
+
+
+
+}

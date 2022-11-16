@@ -1,0 +1,40 @@
+:root {
+  --border-color: #868686;
+  --label-color: #afafaf;
+}
+
+.measurement-container {
+  display: flex;
+
+
+  .components-base-control {
+    .components-text-control__input[type=number] {
+      border-color: var(--border-color);
+      border-radius: 0;
+      border-right: none;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      .components-text-control__input[type=number] {;
+        border-right: 1px solid var(--border-color);
+      }
+    }
+  }
+
+}
+
+.measurement-container-item {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--label-color);
+  }
+}
+
+
+

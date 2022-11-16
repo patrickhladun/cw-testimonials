@@ -1,0 +1,76 @@
+.cwt-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.cwt-baa .cwt-testimonial {
+  display: flex;
+  position: relative;
+  padding: 16px;
+}
+.cwt-baa .cwt-testimonial__body {
+  background: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cwt-baa .cwt-testimonial__content-container {
+  padding: 16px;
+  flex: 55% 1 1;
+}
+.cwt-baa .cwt-testimonial__content:before {
+  display: none;
+  width: 30px;
+  height: 30px;
+  content: "";
+  -webkit-mask: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M291.68,444.19l-11.26-16.55Q322.5,266.09,414.14,67.81h92.4Q484,154.2,461.83,262.75T429.91,444.17Zm-277.2,0-9-16.55A1648.29,1648.29,0,0,1,58.81,259.37Q95.61,158.7,137.68,67.82h92.41a3640.93,3640.93,0,0,0-77.38,376.37Z'/%3E%3C/svg%3E");
+          mask: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M291.68,444.19l-11.26-16.55Q322.5,266.09,414.14,67.81h92.4Q484,154.2,461.83,262.75T429.91,444.17Zm-277.2,0-9-16.55A1648.29,1648.29,0,0,1,58.81,259.37Q95.61,158.7,137.68,67.82h92.41a3640.93,3640.93,0,0,0-77.38,376.37Z'/%3E%3C/svg%3E");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  top: 8px;
+}
+.cwt-baa .cwt-testimonial__baa {
+  display: flex;
+  flex: 45% 1 1;
+  margin: 0;
+  padding: 4px;
+}
+.cwt-baa .cwt-testimonial__before, .cwt-baa .cwt-testimonial__after {
+  display: block;
+  padding: 4px;
+  max-width: 100%;
+  min-height: initial;
+}
+.cwt-baa .cwt-testimonial__before-image img, .cwt-baa .cwt-testimonial__after-image img {
+  width: 100%;
+  height: 100%;
+}
+.cwt-baa .cwt-testimonial__image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+}
+.cwt-baa .cwt-testimonial__meta {
+  margin: 16px 0 0 0;
+}
+.cwt-baa .cwt-testimonial__name {
+  font-size: 22px;
+}
+@media all and (min-width: 768px) {
+  .cwt-baa .cwt-testimonial__body {
+    flex-direction: row;
+  }
+  .cwt-baa .cwt-testimonial__content:before {
+    display: block;
+  }
+  .cwt-baa .cwt-testimonial__baa {
+    margin: 0;
+    padding: 16px;
+  }
+  .cwt-baa .cwt-testimonial__before, .cwt-baa .cwt-testimonial__after {
+    max-width: 50%;
+  }
+}
+/*# sourceMappingURL=block-baa.css.map */

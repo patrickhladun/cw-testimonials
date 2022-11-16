@@ -1,0 +1,113 @@
+{
+  "name": "cityweb-testimonials",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "checkFormat": "prettier --check '**/*.{js,json,css,scss}'",
+    "format": "prettier --write '**/*.{js,json,css,scss}'",
+    "lint": "eslint src",
+    "gulp-watch": "gulp watch",
+    "dev": "webpack --watch --mode=development",
+    "build": "yarn lint && webpack --mode=production && gulp bundle"
+  },
+  "author": "Patrick Hladun",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/blob": "^3.2.1",
+    "@wordpress/block-editor": "^6.2.0",
+    "@wordpress/blocks": "^10.0.0",
+    "@wordpress/browserslist-config": "^2.3.0",
+    "@wordpress/components": "^14.2.0",
+    "@wordpress/compose": "^4.2.0",
+    "@wordpress/core-data": "^3.2.0",
+    "@wordpress/data": "^5.2.0",
+    "@wordpress/edit-post": "^4.2.0",
+    "@wordpress/editor": "^10.2.0",
+    "@wordpress/element": "^3.2.0",
+    "@wordpress/i18n": "^4.2.0",
+    "@wordpress/is-shallow-equal": "^4.2.0",
+    "@wordpress/keycodes": "^3.2.2",
+    "@wordpress/plugins": "^3.2.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "@webpack-cli/serve": "^1.6.0",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-lodash": "^3.3.4",
+    "browser-sync": "^2.27.5",
+    "browserslist": "^4.5.4",
+    "classnames": "^2.3.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-declaration-sorter": "^6.1.3",
+    "css-loader": "^2.1.1",
+    "del": "^6.0.0",
+    "dom-scroll-into-view": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.25.1",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-using": "^0.1.1",
+    "gulp-zip": "^5.1.0",
+    "husky": "^6.0.0",
+    "merge-stream": "^2.0.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.3.2",
+    "sass": "^1.56.1",
+    "sass-loader": "^7.1.0",
+    "short-unique-id": "^4.4.4",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^5.2.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "yargs": "^17.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": "eslint",
+      "src/**/*.{js,json,css,scss}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}

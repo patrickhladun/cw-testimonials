@@ -1,0 +1,12 @@
+.cwb-box-control {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__size-picker {
+    width: 50%;
+  }
+  .components-base-control {
+    margin-bottom: 0;
+  }
+}
